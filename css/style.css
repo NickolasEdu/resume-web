@@ -120,7 +120,7 @@ p {
 }
 
 .box {
-    background-color: var(--colorSecondary);
+    background-color: var(--darkColor);
     border-radius: 5%;
     width: 350px;
     height: 200px;
@@ -145,4 +145,5 @@ p {
     background-color: var(--darkColor);
     padding: 15px;
     text-align: center;
+    color: var(--lightColor);
 }
