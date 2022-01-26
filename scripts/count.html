@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting</title>
+    <style>
+        .decrease {
+            background-color: red;
+        }
+
+        .increase {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="count"></h1>
+    <button id="decrease">-</button>
+    <button id="increase">+</button>
+
+    <script>
+        const count = document.getElementById('count')
+        const increase = document.getElementById('increase')
+        const decrease = document.getElementById('decrease')
+
+        let num = 0
+        let decreaseIn
+        let increaseIn
+
+        decrease.addEventListener('click', function decrease() {
+
+            decreaseIn = setInterval(function () {
+                num--
+                count.innerHTML = num
+            }, 500);
+
+            clearInterval(increaseIn)
+            this.classList.add('decrease')
+            increase.classList.remove('increase')
+        })
+
+        increase.addEventListener('click', function increase() {
+
+            increaseIn = setInterval(function () {
+                num++
+                count.innerHTML = num
+            }, 500);
+
+            clearInterval(decreaseIn)
+            this.classList.add('increase')
+            decrease.classList.remove('decrease')
+        })
+    </script>
+</body>
+
+</html>

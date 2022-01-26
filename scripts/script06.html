@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script - 06</title>
+
+    <style>
+        .invisible {
+            display: none;
+        }
+
+        img {
+            width: 1.5em;
+            height: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <form id='mainForm'>
+        <br>
+        <input type='text' name='txtOutput' placeholder="Insira uma mensagem"></input>
+        <button class='button'>Search</button> <img class="invisible" src="../main/img/loading.gif" alt="Loading">
+    </form>
+
+    <script>
+        const request = document.getElementById('mainForm')
+        const button = document.querySelector('.button')
+        const load = document.querySelector('.invisible')
+
+        request.onsubmit = function (e) {
+            e.preventDefault()
+            button.classList.add('invisible')
+            load.classList.remove('invisible')
+            setTimeout(print, 5000)
+        }
+
+        //na verdade, pensando em fazer uma função promisse que vai definir os classList e depois chamar o print
+
+        function print() {
+            let output = document.forms['mainForm']['txtOutput'].value
+            let text = `<h1>${output}</h1>`
+            document.write(text)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+
+<body>
+    <h1>Objetivo da atividade:</h1>
+    <p>
+        Pegar um array de alunos e contatenar os valores dos objetos, referentes ao nome + sobrenome.
+    </p>
+
+    <p>
+        <b>Resultado</b>
+    </p>
+    <h3 id="print"></h3>
+
+    <script>
+        const students = [
+            { name: 'Maria', last: 'Silva', score: 7, },
+            { name: 'Luiz', last: 'Cardozo', score: 4, },
+            { name: 'Camila', last: 'Matos', score: 9, },
+            { name: 'Luiza', last: 'Picon', score: 6, },
+        ]
+
+        const allStudents = students.map((student) => {
+            return ' ' + student.name + ' ' + student.last
+        })
+
+        
+        document.getElementById('print').innerHTML = allStudents
+    </script>
+</body>
+
+</html>

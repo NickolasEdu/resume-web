@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Form</title>
+    <style>
+        .inputError {
+            border: 2px solid #880808;
+        }
+
+        .alertError {
+            color: #880808;
+        }
+
+        .newError {
+            color: #880808;
+        }
+    </style>
+</head>
+
+<body>
+    <form id='formCadastro'>
+        <div>
+            <label>Estado
+                <select name='estado' id='selected'>
+                    <option value=''> -- Selecione --</option>
+                    <option name='SP' value='SP'>São Paulo</option>
+                    <option name='RJ' value='RJ'>Rio de Janeiro</option>
+                    <option name='PR' value='PR'>Paraná</option>
+                </select>
+                <span class='alertError'></span>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>Cidade
+                <select name='cidade' id='cities'></select>
+                <span class='newError'></span>
+            </label>
+        </div>
+        <br>
+        <button type='submit'>Enviar</button>
+    </form>
+
+    <script>
+        const cities = {
+            sp: ['Jundiaí', 'Campinas', 'Boituva', 'Pirituba'],
+            rj: ['Botafogo', 'Niteroi', 'Barra da Tijuca', 'Macaé'],
+            pr: ['Cascavel', 'Curitiba', 'Serrado', 'Outro'],
+        }
+
+        const selected = document.getElementById('selected')
+        const mainForm = document.getElementById('formCadastro')
+
+
+        // definição do valor onchange
+        selected.addEventListener('change', function () {
+            let itens
+
+            if (this.value == 'SP') {
+                itens = cities.sp
+            } else if (this.value == 'RJ') {
+                itens = cities.rj
+            } else if (this.value == 'PR') {
+                itens = cities.pr
+            }
+
+            let text
+            for (let i = 0; i < itens.length; i++) {
+                text += `<option>${itens[i]}</option>`
+            }
+
+            let newText = `<option selected value=''> -- Selecione --</option>`
+            let outPrint = newText.concat(text);
+
+            document.getElementById('cities').innerHTML = outPrint
+        })
+
+        // Evento validação do form
+        mainForm.addEventListener('submit', function (evento) {
+            evento.preventDefault()
+
+            let inputState = document.forms['formCadastro']['estado']
+            let inputCity = document.forms['formCadastro']['cidade']
+
+            //teste de erro estados
+            if (!inputState.value) {
+                inputState.classList.add('inputError')
+
+                let span = document.querySelector('.alertError')
+                span.innerHTML = 'Selecione o estado'
+            } else {
+                inputState.classList.remove('inputError')
+                let span = document.querySelector('.alertError')
+                span.innerHTML = ''
+            }
+
+            //teste de erro cidades
+            if (!inputCity.value) {
+                inputCity.classList.add('inputError')
+
+                let span = document.querySelector('.newError')
+                span.innerHTML = 'Selecione a cidade'
+            } else {
+                inputCity.classList.remove('inputError')
+
+                let span = document.querySelector('.newError')
+                span.innerHTML = ''
+            }
+        })
+    </script>
+</body>
+
+</html>

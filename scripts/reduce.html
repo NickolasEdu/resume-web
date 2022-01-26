@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+
+<body>
+
+    <p>
+        A atividade consistia em, pegar uma quantidade de notas, somar e imprimir a nota final com o nome do aluno.
+    </p>
+    <h3 id="result"></h3>
+    <script>
+        const student = {
+            name: 'Maria',
+            last: 'Silva',
+            scores: [7, 10, 8, 5, 7, 9],
+        }
+
+        const name = student.name
+        const media = student.scores
+        const sem = student.scores.length
+
+        const finalScore = media.reduce((acc, cur) => {
+            const grade = acc + cur / sem
+            return grade
+        }, 0)
+
+        const finalGrade = Math.ceil(finalScore)
+
+        let print = `A média de ${name} foi de ${finalGrade}, em um total de ${sem} semestres`
+        document.getElementById('result').innerHTML = print
+    </script>
+</body>
+
+</html>

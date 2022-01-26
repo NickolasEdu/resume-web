@@ -1,15 +1,14 @@
 :root {
     --lightColor: #f5f5f5;
     --darkColor: #000000;
-    --colorPrimary: #808080;
-    --colorSecondary: #333333;
+
+    --colorPrimary: #C0C0C0;
+    --colorSecondary: #242124;
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
 }
 
 
@@ -18,13 +17,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    box-sizing: border-box;
     width: 100%;
     height: 50px;
     background-color: var(--colorSecondary);
-    box-shadow: 0 0 20px rgb(184, 192, 184);
+    box-shadow: 0 0 20px var(--colorSecondary);
     padding: 0 20px;
     color: var(--lightColor);
 }
+
 
 .menu {
     display: flex;
@@ -46,11 +48,11 @@
 /* PROFILE CONTENT */
 .profile {
     text-align: center;
-    margin-bottom: 40px;
 }
 
 
 .mainPhoto {
+    position: relative;
     width: 220px;
     border: 3px solid rgb(0,0,0, 0.8);
     border-radius: 50%;
@@ -144,6 +146,7 @@ p {
     width: 100%;
     background-color: var(--darkColor);
     padding: 15px;
+    margin-top: 15px;
     text-align: center;
     color: var(--lightColor);
 }
