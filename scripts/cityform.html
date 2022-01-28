@@ -7,6 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Form</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --lightColor: #f5f5f5;
+            --darkColor: #000000;
+
+            --colorPrimary: #C0C0C0;
+            --colorSecondary: #242124;
+        }
+
         .inputError {
             border: 2px solid #880808;
         }
@@ -18,10 +31,24 @@
         .newError {
             color: #880808;
         }
+
+        .footer {
+            width: 100%;
+            background-color: var(--darkColor);
+            padding: 15px;
+            margin-top: 15px;
+            text-align: center;
+            color: var(--lightColor);
+        }
     </style>
 </head>
 
 <body>
+    <h1>Formulário de estado e cidade</h1>
+    <p>Explicação e tals Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptate consequatur, nulla, fuga esse tenetur at dolorum magni rem cumque illo dolores corporis aliquam obcaecati impedit magnam, asperiores ipsa beatae.</p>
+
+    <br>
+
     <form id='formCadastro'>
         <div>
             <label>Estado
@@ -44,6 +71,8 @@
         <br>
         <button type='submit'>Enviar</button>
     </form>
+
+    <footer class="footer">Developed by: Myself</footer>
 
     <script>
         const cities = {

@@ -47,6 +47,8 @@
 
 /* PROFILE CONTENT */
 .profile {
+    margin: auto;
+    padding: 50px;
     text-align: center;
 }
 
@@ -54,6 +56,7 @@
 .mainPhoto {
     position: relative;
     width: 220px;
+    height: 220px;
     border: 3px solid rgb(0,0,0, 0.8);
     border-radius: 50%;
     margin: 30px;
@@ -67,6 +70,7 @@
 
 .socialPhoto {
     text-decoration: none;
+    padding: 40px;
 }
 
 .icon {
@@ -76,7 +80,7 @@
 h2 {
     font-family: 'Trebuchet MS', Arial, sans-serif;
     font-style: italic;
-    margin-top: 0;
+    padding-bottom: 22px;
     color: rgb(70, 70 70);
     font-weight: 100;
 }
