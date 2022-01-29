@@ -1,8 +1,6 @@
-# My Web Resume 
-##### Um pouco sobre mim em uma página web estática
-
-
 ### My GitHub Status
+
+
 <div align="center">
   <a href="https://instagram.com/Nickolasedu_">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=nickolasEdu&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
