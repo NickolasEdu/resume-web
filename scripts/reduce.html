@@ -1,19 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/codeicon.svg">
     <title>Reduce</title>
+
+    <style>
+        
+        :root {
+            --lightColor: #f5f5f5;
+            --darkColor: #000000;
+
+            --colorPrimary: #C0C0C0;
+            --colorSecondary: #242124;
+        }
+
+        body {
+            background-color: var(--colorPrimary);
+            color: var(--textColor);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+
+        }
+
+        main {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        main h1 {
+            text-align: center;
+            box-sizing: border-box;
+            width: 100%;
+            height: 50px;
+            background-color: var(--colorSecondary);
+            box-shadow: 0 0 20px var(--colorSecondary);
+            padding: 0 20px;
+            color: var(--colorPrimary);
+        }
+    </style>
 </head>
 
 <body>
 
-    <p>
-        A atividade consistia em, pegar uma quantidade de notas, somar e imprimir a nota final com o nome do aluno.
-    </p>
-    <h3 id="result"></h3>
+    <main>
+        <h1>Método Reduce()</h1>
+        <h2>Objetivo</h2>
+        <p>
+            A atividade consistia em, pegar um array com vários números, simulando as notas de um aluno. Somar esses valores e mostrar no console. Porém para este caso eu adaptei para mostrar na página.
+        </p>
+    </main>
+    <hr>
+
+    <h3>Resultado</h3>
+    <h4 id="result"></h4>
+
+
     <script>
         const student = {
             name: 'Maria',
@@ -32,7 +77,7 @@
 
         const finalGrade = Math.ceil(finalScore)
 
-        let print = `A média de ${name} foi de ${finalGrade}, em um total de ${sem} semestres`
+        let print = `A média de ${name} foi de ${finalGrade}, em um total de ${sem} semestres.`
         document.getElementById('result').innerHTML = print
     </script>
 </body>
