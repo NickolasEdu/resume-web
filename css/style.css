@@ -9,6 +9,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 
@@ -156,6 +157,10 @@ section {
 
 section a {
     text-decoration: none;
+}
+
+a:visited {
+    color: #00008B;
 }
 
 .footer {
