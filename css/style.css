@@ -1,9 +1,9 @@
 :root {
-    --lightColor: #a8b2d1;
-    --darkColor: #112240;
+    --lightColor: #DEF2F1;
+    --darkColor: #1A1A1D;
 
-    --colorPrimary: #8892b0;
-    --colorSecondary: #0a192f;
+    --colorPrimary: #29648A;
+    --colorSecondary: #25274D;
 }
 
 * {
@@ -58,7 +58,7 @@
     position: relative;
     width: 220px;
     height: 220px;
-    border: 3px solid rgb(0,0,0, 0.8);
+    border: 3px solid rgba(16, 56, 107, 0.8);
     border-radius: 50%;
     margin: 30px;
     box-shadow: 0px 0px 35px var(--colorSecondary);
@@ -160,7 +160,7 @@ section a {
 }
 
 a:visited {
-    color: #00008B;
+    color: #5Cdb95;
 }
 
 .footer {
