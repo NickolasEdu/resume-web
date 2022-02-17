@@ -96,6 +96,10 @@ body {
     
 }
 
+.boldtxt {
+    font-weight: bold;
+}
+
 body ul {
     list-style-type: none;
 }
