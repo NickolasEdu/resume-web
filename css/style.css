@@ -32,6 +32,7 @@
 .menu {
     display: flex;
     color: var(--lightColor);
+    width: 100%;
 }
 
 .menu li a {
@@ -98,6 +99,8 @@ body {
 
 .boldtxt {
     font-weight: bold;
+    min-width: 290px;
+    max-width: 800px;
 }
 
 body ul {
@@ -105,7 +108,8 @@ body ul {
 }
 
 .main, .about {
-    width: 900px;
+    min-width: 290px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
