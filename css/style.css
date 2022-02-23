@@ -163,8 +163,13 @@ p {
 /* ABOVE CONTENT */
 
 section {
-    width: 900px;
+    min-width: 290px;
+    max-width: 800px;
     margin: auto;
+}
+
+section h4 {
+    margin-top: 8px;
 }
 
 section a {
