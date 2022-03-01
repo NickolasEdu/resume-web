@@ -2,8 +2,8 @@
     --lightColor: #DEF2F1;
     --darkColor: #1A1A1D;
 
-    --colorPrimary: #29648A;
-    --colorSecondary: #25274D;
+    --colorPrimary: #C5C6C7;
+    --colorSecondary: #0B0C10;
 }
 
 * {
@@ -174,11 +174,11 @@ section h4 {
 
 section a {
     text-decoration: none;
-    color: #1A1A1D;
+    color: #25274D;
 }
 
 a:visited {
-    color: #5Cdb95;
+    color: #45A29E;
 }
 
 .footer {
