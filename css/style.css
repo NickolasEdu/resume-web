@@ -181,7 +181,7 @@ a:visited {
     color: #45A29E;
 }
 
-.footer {
+#footer {
     width: 100%;
     background-color: var(--darkColor);
     padding: 15px;
