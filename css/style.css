@@ -46,18 +46,18 @@
 }
 
 /* PROFILE CONTENT */
-.profile {
+#profile {
     display: flex;
     align-items: center;
     margin: auto;
     height: 98vh;
 }
 
-.profile .profileImg {
+#profile .profileImg {
     padding: 80px;
 }
 
-.profile .profileDescription {
+#profile .profileDescription {
     padding: 80px;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -69,7 +69,7 @@ a {
     margin-top: 20px;
 }
 
-.profile .profileDescription a p {
+#profile .profileDescription a p {
     margin: auto 3em;
     background-color: var(--darkColor);
     padding: 10px;
