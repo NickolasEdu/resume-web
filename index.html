@@ -10,59 +10,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <title>My Resume</title>
 </head>
+
 <body>
 
     <header class="header">
-        <h1>
-            My Web Resume
-        </h1>
-        <nav>
+        <h1></h1>
+        <nav class="navbar">
             <ul class="menu">
                 <li>
-                    <a href="#main">Home</a>
+                    <a href="#main">Profile</a>
                 </li>
                 <li>
                     <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#scripts">My JavaScripts</a>
+                    <a>Skills</a>
                 </li>
                 <li>
-                    <a href="#footer">How Find Me</a>
+                    <a href="#scripts">Portfolio</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main class="main" id="main">
+    <main>
         <div class="profile">
-        <img src="./img/imgMain.jpg" rel="Nickolas E. Vieira" class="mainPhoto">
-        <h1>Nickolas Eduardo L. Oliveira</h1>
-        <h2><b>Developer - Front-end</b></h2>
+            <div class="profileImg">
+                <img src="./img/imgMain.jpg" rel="Nickolas E. Vieira" class="mainPhoto">                
+            </div>
 
-        <a href="https://www.instagram.com/nickolasedu_" target="_blank" class="socialPhoto" rel="Insta-placeholder">
-            <img src="./img/instagramicon.svg">
-        </a>
+            <div class='profileDescription'>
+                <h1>Nickolas Eduardo</h1>
+                <h2><b>Developer - Full-stack</b></h2>
+                <a href="https://nickolasedu.github.io/links/" target="_blank"><p>Contact Me</p></a>
+            </div>
 
-        <a href="https://www.linkedin.com/" target="_blank" class="socialPhoto" rel="linkedin-placeholder">
-            <img src="./img/linkedinicon.svg">
-        </a>
 
-        <a href="github.com/NickolasEdu" class="socialPhoto" rel="email-placeholder">
-            <img src="./img/githubicon.svg">
-        </a>
         </div>
 
-        <p>
-            Prazer, meu nome é <span class="boldtxt">Nickolas Eduardo L. Oliveira</span>, moro em São Paulo, Zona Oeste. Dei inicio a minha jornada para me tornar um desenvolvedor em meio a pandemia, eu notei que o mundo e as pessoas ao meu redor estavam evoluindo muito naquele espaço de tempo e decidi de reinventar profissionalmente. Foi então que me indicaram a área de desenvolvimento web, desde o inicio meu foco foi me capacitar como Dev FullStack, na stack <span class="boldtxt">MERN</span>, em MongoDB, Express.js, React.js e Node.js. Porém com o tempo eu senti que estava atropelando etapas, pois estava consumindo muito conteúdo teórico e não estava trabalhando em nenhum projeto para por em prática, foi então que eu resolvi me focar no frontend e agora estou especificamente focado em evoluir como <span class="boldtxt">Desenvolvedor React</span>.
-        </p>
-
-        <p>
-            Como desenvolvedor Junior, o meu objetivo inicial é <span class="boldtxt">aprender e agregar</span>, pelo fato de ser iniciante eu não posso ignorar o fato de que existem muitas coisas que eu não sei, como processos de desenvolvimento, boas práticas, programação funcional e ter o hábito de sempre escrever um código limpo. Essas são habilidades que eu quero evoluir no meu dia a dia como desenvolvedor, ao mesmo busco mostrar o meu valor para ajudar a equipe com as habilidades enquanto evoluo e adquiro novas.
-        </p>
-
-    </main>
+        <div>
+            <p>
+                Prazer, meu nome é <span class="boldtxt">Nickolas Eduardo L. Oliveira</span>, moro em São Paulo, Zona Oeste.
+                Dei inicio a minha jornada para me tornar um desenvolvedor em meio a pandemia, eu notei que o mundo e as
+                pessoas ao meu redor estavam evoluindo muito naquele espaço de tempo e decidi de reinventar
+                profissionalmente. Foi então que me indicaram a área de desenvolvimento web, desde o inicio meu foco foi me
+                capacitar como Dev FullStack, na stack <span class="boldtxt">MERN</span>, em MongoDB, Express.js, React.js e
+                Node.js. Porém com o tempo eu senti que estava atropelando etapas, pois estava consumindo muito conteúdo
+                teórico e não estava trabalhando em nenhum projeto para por em prática, foi então que eu resolvi me focar no
+                frontend e agora estou especificamente focado em evoluir como <span class="boldtxt">DesenvolvedorReact</span>.
+            </p>
     
+            <p>
+                Como desenvolvedor Junior, o meu objetivo inicial é <span class="boldtxt">aprender e agregar</span>, pelo
+                fato de ser iniciante eu não posso ignorar o fato de que existem muitas coisas que eu não sei, como
+                processos de desenvolvimento, boas práticas, programação funcional e ter o hábito de sempre escrever um
+                código limpo. Essas são habilidades que eu quero evoluir no meu dia a dia como desenvolvedor, ao mesmo busco
+                mostrar o meu valor para ajudar a equipe com as habilidades enquanto evoluo e adquiro novas.
+            </p>
+        </div>
+    </main>
+
     <div class="skills">
         <div class="box">
             <h3>Main Skills</h3>
@@ -76,7 +83,6 @@
         </div>
 
         <div class="box">
-
             <h3>Hard skills</h3>
             <ul>
                 <li>Styled Components</li>
@@ -103,55 +109,54 @@
         <h1>About Me</h1>
         <p>
             <span class="boldtxt">
-                Nessa sessão resolvi dividir um pouco da minha trajetória de desenvolvimento pessoal, e o inicio dos meus estudos na programação.
-            </span> 
+                Nessa sessão resolvi dividir um pouco da minha trajetória de desenvolvimento pessoal, e o inicio dos
+                meus estudos na programação.
+            </span>
         </p>
 
         <p>
-            Apesar da minha paixão por tecnologia eu levei bastante tempo para realmente me interessar pela parte do código, mas com o desenvolvimento eu tive uma experiência cedo através do blogspot, do Google. Em 2012 eu e mais dois amigos fundamos um blog e um perfil no Twitter para dar informação sobre futebol, tudo como brincadeira, mas nós erámos bastante envolvidos com esse projeto, a ferramenta do Google de edição de layout era muito intuitiva, e além da parte do conteúdo que os usuários consumiam, nós tínhamos muita atenção com a parte visual do nosso blog, e com o tempo começamos a levar muito a sério aquela brincadeira, e no fim das contas, em 2 anos nós conseguimos a marca de 500 mil acessos no nosso blog, que chegou ao fim no ano seguinte, <span class="boldtxt">ali eu ainda não sabia mas já tinha sido introduzido a criação de interfaces.</span>
+            Apesar da minha paixão por tecnologia eu levei bastante tempo para realmente me interessar pela parte do
+            código, mas com o desenvolvimento eu tive uma experiência cedo através do blogspot, do Google. Em 2012 eu e
+            mais dois amigos fundamos um blog e um perfil no Twitter para dar informação sobre futebol, tudo como
+            brincadeira, mas nós erámos bastante envolvidos com esse projeto, a ferramenta do Google de edição de layout
+            era muito intuitiva, e além da parte do conteúdo que os usuários consumiam, nós tínhamos muita atenção com a
+            parte visual do nosso blog, e com o tempo começamos a levar muito a sério aquela brincadeira, e no fim das
+            contas, em 2 anos nós conseguimos a marca de 500 mil acessos no nosso blog, que chegou ao fim no ano
+            seguinte, <span class="boldtxt">ali eu ainda não sabia mas já tinha sido introduzido a criação de
+                interfaces.</span>
         </p>
 
         <p>
-            Minha paixão pelo esporte sempre falou alto, foi então que depois de terminar o colégio entrei na faculdade de Educação Física, e <span class="boldtxt">lá foi o lugar que desenvolvi a maior parte das minhas habilidades de trabalho em grupo.</span> Além do fato de ter entrado na faculdade com 17 anos, eu aprendi a lidar muito bem com a pressão e desconfiança quando precisava lidar com os outros alunos mais velhos. No começo do curso eu era tratado com certa indiferença, mas com o tempo fui mostrando minha capacidade de decisão e de liderar grupos de estudo e apresentações de trabalho. Apesar de nunca ter exercido a profissão, eu desenvolvi habilidades pessoais valiosas.
+            Minha paixão pelo esporte sempre falou alto, foi então que depois de terminar o colégio entrei na faculdade
+            de Educação Física, e <span class="boldtxt">lá foi o lugar que desenvolvi a maior parte das minhas
+                habilidades de trabalho em grupo.</span> Além do fato de ter entrado na faculdade com 17 anos, eu
+            aprendi a lidar muito bem com a pressão e desconfiança quando precisava lidar com os outros alunos mais
+            velhos. No começo do curso eu era tratado com certa indiferença, mas com o tempo fui mostrando minha
+            capacidade de decisão e de liderar grupos de estudo e apresentações de trabalho. Apesar de nunca ter
+            exercido a profissão, eu desenvolvi habilidades pessoais valiosas.
         </p>
 
         <p>
-            O motivo de eu nunca ter ingressado na carreira de professor, foi que ainda durante a faculdade eu estava planejando empreender, e foi o que aconteceu, com um sócio compramos um comércio e foi onde eu foquei as minhas energias, aprendi muito sobre educação financeira, gerenciamento e lidar com imprevistos. Mas então em 2020 por conta das incertezas da pandemia que resolvi me reinventar, foi ouvindo um podcast sobre tecnologia que me ascendeu a vontade de aprender sobre programação, e a partr da indicação de amigos e vídeos no youtube que fui aprendendo o básico e entendo melhor sobre as áreas nesse mercado,  antes de enfim decidir me focar na área de desenvolvimento web. A <span class="boldtxt">minha facilidade com o inglês foi um diferencial</span> e mesmo com todas as dificuldades iniciais, foi no terceiro mês que pensei em desistir, mas ao notar toda a minha evolução, tudo o que havia aprendido, eu entendi que esse era o meu caminho.
+            O motivo de eu nunca ter ingressado na carreira de professor, foi que ainda durante a faculdade eu estava
+            planejando empreender, e foi o que aconteceu, com um sócio compramos um comércio e foi onde eu foquei as
+            minhas energias, aprendi muito sobre educação financeira, gerenciamento e lidar com imprevistos. Mas então
+            em 2020 por conta das incertezas da pandemia que resolvi me reinventar, foi ouvindo um podcast sobre
+            tecnologia que me ascendeu a vontade de aprender sobre programação, e a partr da indicação de amigos e
+            vídeos no youtube que fui aprendendo o básico e entendo melhor sobre as áreas nesse mercado, antes de enfim
+            decidir me focar na área de desenvolvimento web. A <span class="boldtxt">minha facilidade com o inglês foi
+                um diferencial</span> e mesmo com todas as dificuldades iniciais, foi no terceiro mês que pensei em
+            desistir, mas ao notar toda a minha evolução, tudo o que havia aprendido, eu entendi que esse era o meu
+            caminho.
         </p>
 
         <p>
-            Estudar programação não só me ensinou sobre código, como me ensinou a estudar <span class="boldtxt">com consistência, persistência e paciência.</span> Além de ter criado em mim um hábito de praticar o inglês, agora não apenas no código. Acredito que o adjetivo desenvolvedor para mim, se aplica no geral, pois para aprender a desenvolver sistemas, primeiro eu tive oque aprender a me desenvolver e a querer sempre melhorar, agora eu carrego comigo essa ambição.
+            Estudar programação não só me ensinou sobre código, como me ensinou a estudar <span class="boldtxt">com
+                consistência, persistência e paciência.</span> Além de ter criado em mim um hábito de praticar o inglês,
+            agora não apenas no código. Acredito que o adjetivo desenvolvedor para mim, se aplica no geral, pois para
+            aprender a desenvolver sistemas, primeiro eu tive oque aprender a me desenvolver e a querer sempre melhorar,
+            agora eu carrego comigo essa ambição.
         </p>
     </article>
-
-    <section id="scripts">
-        <h3>Mini portifório</h3>
-        <h4>
-            Entre as atividades de JavaScript que eu fiz durante o curso, consegui adaptar algumas e colocar nesse pequeno portifório e deixar aqui o registro dos meus estudos.
-        </h4>
-        <div>
-            <ul>
-                <li>
-                    <a href="../scripts/cityform.html" target="_blank">Formulário de cidades</a>
-                </li>
-                <li>
-                    <a href="../scripts/count.html" target="_blank">Contador</a>
-                </li>
-                <li>
-                    <a href="../scripts/map.html" target="_blank">Método Map</a>
-                </li>
-                <li>
-                    <a href="../scripts/reduce.html" target="_blank">Método Reduce</a>
-                </li>
-                <li>
-                    <a href="../scripts/filter.html" target="_blank">Método Filter</a>
-                </li>
-                <li>
-                    <a href="../scripts/load.html" target="_blank">Loading</a>
-                </li>
-            </ul>
-        </div>
-    </section>
 
     <footer id="footer">Developed by: Myself</footer>
 
