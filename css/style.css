@@ -159,7 +159,14 @@ p {
 }
 
 #skills p {
+    text-align: justify;
     font-size: 30px;
+}
+
+#skills span {
+    color: #DEF2F1;
+    background-color: #1A1A1D;
+    padding: 5px;
 }
 
 /* FOOTER */
