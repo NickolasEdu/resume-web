@@ -160,7 +160,7 @@ p {
 #about p {
     text-align: justify;
     font-size: 30px;
-    margin: 0.5em 2em;
+    margin: 0.5em 1em;
 }
 
 #about #booksList span {
@@ -185,14 +185,18 @@ p {
 #projects .projectBox {
     margin: 1em;
     background-color: white;
-    border: black solid 3px;
-    width: 400px;
-    height: 400px;
+    border: 2px solid black;
+    box-shadow: 3px 10px black;
+    width: 350px;
+    height: 100%;
 }
 
 #projects .projectBox img {
-    width: 99.5%;
-    height: 150px;
+    width: 280px;
+    height: 360px;
+    border-radius: 20px;
+    margin: auto 1em;
+    padding: 10px;
 }
 
 /* FOOTER */
