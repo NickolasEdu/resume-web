@@ -189,7 +189,7 @@ p {
 #projects #container {
     display: flex;
     margin: auto 1em;
-
+    justify-content: center;
 }
 
 #projects h2 {
@@ -235,6 +235,15 @@ p {
     border-radius: 20px;
     margin: auto 1em;
     padding: 10px;
+}
+
+#projects .projectBox .projectIcons {
+    display: flex;
+    justify-content: end;
+}
+
+#projects .projectBox .projectIcons a i {
+    color: #0B0C10;
 }
 
 /* FOOTER */
