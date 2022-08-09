@@ -172,6 +172,14 @@ p {
     pointer-events: visible;
 }
 
+#about #booksList {
+    width: 350px;
+    color: #DEF2F1;
+    padding: 10px;
+    background-color: #1A1A1D;
+    margin-left: 2em;
+}
+
 #about #booksButton h3 {
     margin: 1em;
 }
@@ -179,6 +187,7 @@ p {
 #about #booksButton ul {
     margin: 2px 1em;
 }
+
 
 .hiddenBooks {
     display: none;
