@@ -169,7 +169,7 @@ p {
     padding: 5px;
     margin: 2em;
     width: 100px;
-    pointer-events: visible;
+    cursor: pointer;
 }
 
 #about #booksList {

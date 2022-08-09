@@ -1,17 +1,25 @@
 const booksButton = document.getElementById('booksButton')
-let state = false
+const booksList = document.getElementById('booksList')
+let isOpen = false
 
 booksButton.onclick = function() {
-    state = true
-
-    if (state == true) {
-        handleState()
-    } else {
-        alert('200')
-    }
+    handleState()
 }
 
 function handleState() {
-    const booksList = document.getElementById('booksList')
+    if (isOpen == true) {
+        closeList()
+        isOpen = false
+    } else {
+        openList()
+        isOpen = true
+    }
+}
+
+function openList() {
     booksList.classList.remove('hiddenBooks')
+}
+
+function closeList() {
+    booksList.classList.add('hiddenBooks')
 }
