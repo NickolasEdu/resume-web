@@ -1,10 +1,12 @@
 :root {
+    
     --lightColor: #DEF2F1;
-    --darkColor: #1A1A1D;
+    --darkColor: #1f2833;
 
     --colorPrimary: #C5C6C7;
     --colorSecondary: #0B0C10;
 }
+
 
 * {
     margin: 0;
@@ -92,7 +94,7 @@
 
 #profileHome .profileInfo a p {
     margin: auto 3em;
-    background-color: var(--darkColor);
+    background-color: var(--colorSecondary);
     padding: 10px;
     border-radius: 50px;
     color: var(--colorPrimary);
@@ -121,7 +123,7 @@
 .profileCert img {
     margin: 2em;
     padding: 15px;
-    background-color: var(--colorSecondary);
+    background-color: var(--darkColor);
     max-width: 80%;
 }
 
@@ -164,8 +166,8 @@ p {
 }
 
 #about #booksButton {
-    color: #DEF2F1;
-    background-color: #1A1A1D;
+    color: var(--lightColor);
+    background-color: var(--darkColor);
     padding: 5px;
     margin: 2em;
     width: 100px;
@@ -174,9 +176,9 @@ p {
 
 #about #booksList {
     width: 350px;
-    color: #DEF2F1;
+    color: var(--lightColor);
     padding: 10px;
-    background-color: #1A1A1D;
+    background-color: var(--darkColor);
     margin-left: 2em;
 }
 
@@ -260,7 +262,7 @@ p {
 #footer {
     width: 100%;
     height: 50px;
-    background-color: var(--darkColor);
+    background-color: var(--colorSecondary);
     margin-top: 15px;
 }
 
