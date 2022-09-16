@@ -201,6 +201,7 @@ p {
     display: flex;
     margin: auto 1em;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #projects h2 {
