@@ -24,7 +24,7 @@
 */
 
 body {
-    background-color: var(--lightColor);
+    background-color: silver;
     max-width: 99vw;
     height: 600px;
 }
@@ -103,9 +103,9 @@ footer h3 {
 
 main #text {
     text-align: justify;
-    margin: 1em;
     display: block;
     width: 90%;
+    margin: 4rem;
 }
 
 main #text p {
