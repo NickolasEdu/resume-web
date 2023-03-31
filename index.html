@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="icon" href="./img/codeicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b9c3e8b65a.js" crossorigin="anonymous"></script>
@@ -14,133 +15,63 @@
 
 <body>
 
-    <header class="header">
-        <h1></h1>
-        <nav class="navbar">
-            <ul class="menu">
-                <li>
-                    <a href="#profileHome">Profile</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#scripts">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
 
-    <main>
-        <div id="profileHome">
-            <div class="profileImg">
-                <img src="./img/imgMain.jpg" rel="Nickolas E. Vieira" class="mainPhoto">
+        <header id="profile">
+            <div id="imgProfile">
+                <img src="./assets/img.jfif" alt="Minha foto">
             </div>
 
-            <div class='profileInfo'>
+            <div id="infoProfile">
                 <h1>Nickolas Eduardo</h1>
-                <h2><b>Developer Fullstack</b></h2>
-                <a href="https://nickolasedu.github.io/links/" target="_blank">
-                    <p>Contact Me</p>
-                </a>
+                <h2>Data Analyst</h2>
+                <a href=".com" target="_blank">Contact Me</a>
             </div>
-        </div>
+        </header>
 
-        <div id="profileDescript">
-            <p>
-                Prazer, meu nome é <span class="boldtxt">Nickolas Eduardo</span>, sou natural de São Paulo, Capital. E
-                estou a procura de oportunidades como desenvolvedor web, ao mesmo tempo que continuo a me especializar.
-            </p>
+        <main>
+            <h2>About</h2>
 
-            <p>
-                A base dos meus conhecimentos são em Frontend, porém meu objetivo é alcançar o Full-stack de forma
-                plena. E para chegar lá, eu estou aberto a colaborações com pessoas ou instituições que tenham interesse
-                em fazer parte deste processo de <span class="boldtxt">evolução constante.</span>
-            </p>
+            <div id="text">
+                <p>
+                    I am committed to lifelong learning and strive to improve myself every day. In 2022, I decided to pursue a career in data. After one and a half years of studying programming languages, I began my post-graduation studies in Data Science with a focus on Data Analysis.
 
-            <p>
-                As principais tecnologias das quais tenho experiência são: <span class="boldtxt">HTML, CSS, JavaScript,
-                    Node.js, Git, React.js, SQL e Mendix Low-Code</span>. Além de já ter tido contato com Express.js,
-                SASS, Styled Components, Bootstrap, Next.js, SCRUM e Bubble No-Code.
-            </p>
-        </div>
+                    <br>
 
-        <div class="profileCert">
-            <h4>Certificados</h4>
+                    In addition to my studies, I have experience as a school teacher, entrepreneur, and freelance translator, primarily translating texts from English. I am seeking an opportunity at a company where I can deliver results while taking my career to the next level.
+                </p>
 
-            <img src="./img/certificadofundamentar_black.jpg" alt="Certificado Rocketseat Fundamentar">
-            <img src="./img/Progbr.png" alt="Certificado Prog BR">
-            <img src="./img/rks.conectar.jpg" alt="Certificado Rocketseat Conectar">
-            <img src="./img/CertificadoMendix_page-0001.jpg" alt="Certificado Mendix Low-Code">
-            <img src="./img/certificadoEspecial.jpg" alt="Certificado Especializar">
-        </div>
-    </main>
+                <p>
+                    I wrote this site only with HTML and CSS, also I have experiences with JavaScript, and other languages like Dart and C, also React, Mendix Low-Code platform, Flutter and Flask. In the University I learned about R and Python, which is my primary language right now. 
 
-    <article id="about">
-        <h2>About</h2>
-        <p>
-            De maneira resumida, posso dizer que as minhas principais soft skills são: <b>facilidade com inglês,
-                controle emocional, adaptabilidade, organização e planejamento, trabalho em grupo e uma constante
-                vontade de melhorar a cada dia e mindset de crescimento.</b>
-        </p>
+                    <br>
 
-        <p>
-            Minha introdução ao desenvolvimento web foi em 2012, quando junto de dois amigos criamos um meio de
-            falar sobre futebol e compartilhar as nossas opiniões. Com esse desejo criamos e gerenciamos um blog -
-            que foi criado a partir da plataforma do Google - e montamos e gerenciamos um time que continha social
-            media e criação de conteúdo, uma brincadeira que ficou séria e em 2 anos tivemos mais de 500.000 visitas
-            no nosso blog.
-        </p>
-
-        <p>
-            Esse mesmo amor pelo esporte foi o que me levou a entrar na faculdade de Educação Física, onde
-            desenvolvi mais habilidades de trabalhos em equipe e controle emocional, pois um dos elementos daquele
-            contexto foi que entrei na faculdade ainda com 17, levou tempo e precisei mostrar serviço para comecar a
-            ter o respeito dos alunos mais velhos na hora dos planejamentos de trabalhos em grupo.
-        </p>
-
-        <p>
-            Já nessa época foi quando reacendeu em mim o gosto pela leitura, e sempre que podia eu aliava ao
-            estudos. Ainda durante a minha graduação que comecei a me interessar sobre educação financeira e
-            investimentos, decidi então que queria empreender e desde 2019 passei a gerenciar um pequeno comércio
-            como MEI. Porém foi durante a pandemia que eu vi novamente a necessidade de me reinventar.
-        </p>
-
-        <p>
-            Atualmente, procuro completar meu conhecimento Fullstack, onde já tenho muita familiaridade com HTML,
-            CSS e
-            Javascript, porém ainda preciso me aprofundar em frameworks, processos de desenvolvimento em
-            front/backend e
-            fazer projetos para praticar. Além de ter voltado a ler nos meus tempos livres, para fixar mais o
-            inglês,
-            passei a assistir séries e filmes com áudios e legendas nativas. Profissionalmente quero me inserir no
-            mercado tech e futuramente fazer uma pós graduação na área, porém ainda não me decidi entre Analise e
-            desenvolvimento de sistemas ou ciência de dados.
-        </p>
+                    I like to use Python because of the ecosystem, for example in Jupyter Notebook I can use Pandas Library and visualization with Matplotlib and Seaborn (but I experienced the Google Colab too). Also, thinking about ecosystem, I focused in learn SQL Server  for database because of the Microsoft 365, and then I learned about Excel and Power BI, applying for building dashboards, pivot tables, charts and data cleaning.
+                    
+                </p>
+            </div>
+        </main>
 
 
-        <span id="booksButton">Books List +</span>
-        <div id="booksList" class="hiddenBooks">
-            <h3>Leituras nos últimos 24 meses</h3>
-            <ul>
-                <li>Inteligência Emocional</li>
-                <li>SCRUM - A Arte de Fazer o Mesmo Trabalho Pela Metade do Tempo</li>
-                <li>Pai Rico, Pai Pobre</li>
-                <li>Clean Code</li>
-                <li>O Obstaculo É O Caminho</li>
-                <li>Mindset - A Nova Psicologia do Sucesso</li>
-                <li>Ikigai</li>
-                <li>O Alquimista, Paulo Coelho</li>
-                <li>Mais Esperto que o Diabo, Napoleon Hill</li>
-                <li>O Homem Mais Rico da Babilônia</li>
-            </ul>
-        </div>
-    </article>
+        <footer>
+            <h3>Certifications</h3>
+            <div id="footer">
+                <img src="./assets/cert/Progbr.png" alt="Certificado Rocketseat Fundamentar">
+                <img src="./assets/cert/CertificadoMendix_page-0001.jpg" alt="Certificado Prog BR">
+                <img src="./assets/cert/certificadofundamentar_black.jpg" alt="Certificado Rocketseat Conectar">
+                <img src="./assets/cert/rks.conectar.jpg" alt="Certificado Mendix Low-Code">
+                <img src="./assets/cert/certificadoEspecial.jpg" alt="Certificado Especializar">
+            </div>
+        </footer>
+    
+    </div>
+    
+    
+<!-- 
+    STANDBY 
+-->
 
-    <div id="projects">
+    <!-- <div id="projects">
         <h2>Projects</h2>
 
         <div id="container">
@@ -190,8 +121,8 @@
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                 </div>
-            </div>
-
+            </div> -->
+<!-- 
             <div class="projectBox">
                 <img src="./img/img_links.png" alt="My Links">
                 <h3>Linkthree</h3>
@@ -255,15 +186,10 @@
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
             </div>
-        </div>
+        </div> -->
     </div>
     </div>
 
-    <footer id="footer">
-        <p>
-            Developed by: Myself
-        </p>
-    </footer>
 
     <script src="./main.js"></script>
 </body>
